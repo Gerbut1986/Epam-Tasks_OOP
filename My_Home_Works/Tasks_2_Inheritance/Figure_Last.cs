@@ -14,7 +14,7 @@
             Y = y;
         }
 
-        public void Draw() { }
+        public virtual void Draw() { }
 
         public void DrawAll(params IDrawable[] array)
         {
@@ -29,7 +29,6 @@
 
         public override void Draw()
         {
-            base.Draw();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nSquare w/ points:\nX: {X}\nand\nY: {Y}");
             Console.ResetColor();
@@ -42,7 +41,6 @@
 
         public override void Draw()
         {
-            base.Draw();
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine($"\nRectangle w/ points:\nX: {X}\nand\nY: {Y}");
             Console.ResetColor();
