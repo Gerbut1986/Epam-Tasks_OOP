@@ -2,27 +2,30 @@
 {
     using System;
 
-    public class Figure_
+    public class Figure_Last : IDrawable
     {
         protected readonly double X, Y;
 
-        public Figure_(double x, double y)
+        public Figure_Last() { }
+
+        public Figure_Last(double x, double y)
         {
             X = x;
             Y = y;
         }
 
-        public virtual void Draw()
+        public virtual void Draw() { }
+
+        public void DrawAll(params IDrawable[] array)
         {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("\nIt's a Figure is: \n");
-            Console.ResetColor();
+            for(int i = 0; i < array.Length; i++)
+                array[i].Draw();
         }
     }
 
-    public class Square_ : Figure_
+    public class Square_L : Figure_Last
     {
-        public Square_(double x, double y) : base(x, y) { }
+        public Square_L(double x, double y) : base(x, y) { }
 
         public override void Draw()
         {
@@ -33,9 +36,9 @@
         }
     }
 
-    public class Rectangle_V : Figure_
+    public class Rectangle_L : Figure_Last
     {
-        public Rectangle_V(double x, double y) : base(x, y) { }
+        public Rectangle_L(double x, double y) : base(x, y) { }
 
         public override void Draw()
         {

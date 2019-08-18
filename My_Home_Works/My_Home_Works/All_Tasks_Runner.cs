@@ -139,18 +139,15 @@
         public void Task_8()
         {
             Input("Figure(base of a class)", ref x, ref y);
-
             Figure_ figure = new Figure_(x, y);
 
             Input("Rectangle", ref x, ref y);
-
             Rectangle_V rect = new Rectangle_V(x, y);
 
             Input("Square", ref x, ref y);
-
             Square_ square = new Square_(x, y);
 
-            figure.Draw();
+            //figure.Draw();
 
             figure = rect;
             figure.Draw();
@@ -161,11 +158,24 @@
 
         void Input(string figureName, ref double x, ref double y)
         {
-            Console.Write($"Input X for {figureName}: ");
+            Console.Write($"\nInput X for {figureName}: ");
             x = double.Parse(Console.ReadLine());
 
-            Console.Write("Input Y for {figureName}: ");
+            Console.Write($"Input Y for {figureName}: ");
             y = double.Parse(Console.ReadLine());
+        }
+
+        public void Task_9()
+        {
+            Figure_Last figure = new Figure_Last();
+
+            Input("Rectangle", ref x, ref y);
+            Rectangle_L rect = new Rectangle_L(x, y);
+
+            Input("Square", ref x, ref y);
+            Square_L square = new Square_L(x, y);
+
+            figure.DrawAll(rect, square);
         }
     }
 }

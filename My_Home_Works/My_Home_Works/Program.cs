@@ -76,6 +76,14 @@
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
+                    case 9:
+                        Console.Clear();
+                        new All_Tasks_Runner().Task_9();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.ReadKey(true);
+                        Console.ResetColor();
+                        break;
                     case 0:break;
                     default:
                         Console.Clear();
@@ -106,6 +114,7 @@
             Console.WriteLine("\n6 - Task 6 (Base of a class Figure with method Draw())");
             Console.WriteLine("\n7 - Task 7 (Base of a class Figure use readonly properties)");
             Console.WriteLine("\n8 - Task 8 (Class Figure use virtual method instead abstract)");
+            Console.WriteLine("\n9 - Task 9 (Class Figure add IDrawable interface with Draw() method");
             Console.WriteLine("\n0 - Exit"); 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\t\t\t   Please make your choice..");

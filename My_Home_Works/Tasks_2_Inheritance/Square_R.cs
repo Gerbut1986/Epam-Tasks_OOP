@@ -9,7 +9,7 @@
         public override void Draw()
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine($"Square w/ points:\nX: {X}\nand\nY: {Y}");
+            Console.WriteLine($"\nSquare w/ points:\nX: {X}\nand\nY: {Y}");
             Console.ResetColor();
         }
     }
