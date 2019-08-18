@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All_Tasks.cs" />
+    <Compile Include="All_Tasks_Runner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +58,10 @@
       <Project>{36b0bae6-833d-45fd-b619-cc40d640de50}</Project>
       <Name>Tasks_2_Inheritance</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tasks %28Descriptions%29\Tasks 2 %28Inheritance%29.txt" />
+    <Content Include="Tasks %28Descriptions%29\Tasks 1 %28Classes%29.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

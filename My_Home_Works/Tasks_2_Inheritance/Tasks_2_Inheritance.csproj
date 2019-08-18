@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Figure.cs" />
+    <Compile Include="Figure_.cs" />
     <Compile Include="Figure_Readonly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle_R.cs" />

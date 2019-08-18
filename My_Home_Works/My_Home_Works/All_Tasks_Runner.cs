@@ -4,8 +4,10 @@
     using Tasks_1_Classes;
     using Tasks_2_Inheritance;
 
-    class All_Tasks
+    class All_Tasks_Runner
     {
+        double x = 0.0, y = 0.0;
+
         public void Task_1()
         {
             Point coordUp, coordLow;
@@ -128,14 +130,42 @@
 
         public void Task_7()
         {
-            Console.Write("Input X: ");
-            double x = double.Parse(Console.ReadLine());
-            Console.Write("Input Y: ");
-            double y = double.Parse(Console.ReadLine());
+            Input("Rectangle and Square", ref x, ref y);
             Figure_Readonly[] figures = new Figure_Readonly[] { new Square_R(x, y), new Rectangle_R(x, y) };
-
             for (int i = 0; i < figures.Length; i++)
                 figures[i].Draw();
+        }
+
+        public void Task_8()
+        {
+            Input("Figure(base of a class)", ref x, ref y);
+
+            Figure_ figure = new Figure_(x, y);
+
+            Input("Rectangle", ref x, ref y);
+
+            Rectangle_V rect = new Rectangle_V(x, y);
+
+            Input("Square", ref x, ref y);
+
+            Square_ square = new Square_(x, y);
+
+            figure.Draw();
+
+            figure = rect;
+            figure.Draw();
+
+            figure = square;
+            figure.Draw();
+        }
+
+        void Input(string figureName, ref double x, ref double y)
+        {
+            Console.Write($"Input X for {figureName}: ");
+            x = double.Parse(Console.ReadLine());
+
+            Console.Write("Input Y for {figureName}: ");
+            y = double.Parse(Console.ReadLine());
         }
     }
 }

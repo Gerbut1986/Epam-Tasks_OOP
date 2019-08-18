@@ -14,7 +14,7 @@
                 {
                     case 1:
                         Console.Clear();
-                        new All_Tasks().Task_1();
+                        new All_Tasks_Runner().Task_1();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -22,7 +22,7 @@
                         break;
                     case 2:
                         Console.Clear();
-                        new All_Tasks().Task_2();
+                        new All_Tasks_Runner().Task_2();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -30,7 +30,7 @@
                         break;
                     case 3:
                         Console.Clear();
-                        new All_Tasks().Task_3();
+                        new All_Tasks_Runner().Task_3();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -38,7 +38,7 @@
                         break;
                     case 4:
                         Console.Clear();
-                        new All_Tasks().Task_4();
+                        new All_Tasks_Runner().Task_4();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -46,7 +46,7 @@
                         break;
                     case 5:
                         Console.Clear();
-                        new All_Tasks().Task_5();
+                        new All_Tasks_Runner().Task_5();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -54,7 +54,7 @@
                         break;
                     case 6:
                         Console.Clear();
-                        new All_Tasks().Task_6();
+                        new All_Tasks_Runner().Task_6();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -62,7 +62,15 @@
                         break;
                     case 7:
                         Console.Clear();
-                        new All_Tasks().Task_7();
+                        new All_Tasks_Runner().Task_7();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.ReadKey(true);
+                        Console.ResetColor();
+                        break;
+                    case 8:
+                        Console.Clear();
+                        new All_Tasks_Runner().Task_8();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue...");
                         Console.ReadKey(true);
@@ -96,6 +104,8 @@
             Console.WriteLine("\n\t\t\t   The Topic - 'Inheritance'");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\n6 - Task 6 (Base of a class Figure with method Draw())");
+            Console.WriteLine("\n7 - Task 7 (Base of a class Figure use readonly properties)");
+            Console.WriteLine("\n8 - Task 8 (Class Figure use virtual method instead abstract)");
             Console.WriteLine("\n0 - Exit"); 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\t\t\t   Please make your choice..");

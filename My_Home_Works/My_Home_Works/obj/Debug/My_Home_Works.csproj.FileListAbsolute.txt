@@ -29,3 +29,15 @@ C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\My_Home_Works\bin
 C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\My_Home_Works\bin\Debug\Tasks_2_Inheritance.dll
 C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\My_Home_Works\bin\Debug\Tasks_1_Classes.pdb
 C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\My_Home_Works\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\My_Home_Works.exe.config
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\My_Home_Works.exe
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\My_Home_Works.pdb
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_1_Classes.dll
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_1_Classes.pdb
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.csprojAssemblyReference.cache
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.csproj.CoreCompileInputs.cache
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.csproj.CopyComplete
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.exe
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.pdb
