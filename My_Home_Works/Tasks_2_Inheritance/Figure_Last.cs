@@ -14,7 +14,7 @@
             Y = y;
         }
 
-        public virtual void Draw() { }
+        public void Draw() { }
 
         public void DrawAll(params IDrawable[] array)
         {
