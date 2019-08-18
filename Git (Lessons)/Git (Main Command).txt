@@ -1,0 +1,69 @@
+Generate 2 pairs of the SSH Keys (to access on the GitHub, BitBucket e.t.c..):
+
+$ ssh-keygen -t rsa -C "andriygerbut@gmail.com"
+ -> left all setting by default (press ENTER at all).
+
+------------------------------------------------------------------------------
+
+Signature 'name' and 'email' when we make commit, it'll be understand:
+global - for all repository.
+
+git config --global user.name "Andriy Gerbut"
+git config --global user.email "andriygerbut@gmail.com"
+
+------------------------------------------------------------------------------
+
+////////////////////////////////////////////////////////////////////////////////
+
+                                Main Git Settings:
+                               --------------------
+«агрузить гит можно тут: http://git-scm.com/downloads
+
+”станавливайте гит с настройками по умолчанию.
+
+√енераци€ пары ssh ключей:
+
+     ssh-keygen -t rsa ЦC Уvitali_shulha@epam.com"
+
+ѕубличный ключ (id_rsa) нужно отправить владельцу репозитори€ дл€ получени€ 
+прав работы. 
+»ли загрузить в настройки профил€ в bitbucket/github/gitlab
+
+Ќастройка имени пользовател€ и емейла:
+
+     $git config --global user.name УVitali ShulhaУ
+
+     $git config --global user.email Уvitali_Shulha@epam.com"
+
+////////////////////////////////////////////////////////////////////////////////
+
+$ pwd
+/c/Users/Juia
+
+
+git clone git@github.com:Gerbut1986/Epam-Tasks.git
+
+ -> yes
+
+chech content:
+ $ ls
+
+ $ cd epam-tasks/   // cd - change directory
+ 
+
+Juia@Juia MINGW64 ~/epam-tasks (master)
+
+----------------------------------------------
+
+„то бы убедитьс€, что мы действительно в git repository, а не в каком то другом:
+  
+$ git remote -v
+origin  git@github.com:Gerbut1986/Epam-Tasks.git (fetch)
+origin  git@github.com:Gerbut1986/Epam-Tasks.git (push)
+
+---------------------------------------------------------
+
+ѕодт€гиваем файл с репозитори€, когда хто то закомител:
+
+  git pull
+

@@ -1,0 +1,11 @@
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.csprojAssemblyReference.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks\Epam-Tasks\My_Home_Works\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.pdb
