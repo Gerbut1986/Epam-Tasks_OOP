@@ -40,14 +40,14 @@
 
             Console.WriteLine("\n\nPlease input coordinates of an lower right corner:\n");
             upLeft.Y = double.Parse(Console.ReadLine());
-            Console.Write("X2: ");
+            Console.Write("\nX2: ");
             lowRight.X = double.Parse(Console.ReadLine());
             Console.Write("Y2: ");
             lowRight.Y = double.Parse(Console.ReadLine());
 
             Rectangle_Property rect2 = new Rectangle_Property(upLeft, lowRight);
 
-            Console.WriteLine($"Area of a Rectangle is: {rect2.GetArea}");
+            Console.WriteLine($"\n\nArea of a Rectangle is: {rect2.GetArea}");
             Console.WriteLine($"Perimeter of a Rectangle is: {rect2.GetPerimeter}");
         }
 

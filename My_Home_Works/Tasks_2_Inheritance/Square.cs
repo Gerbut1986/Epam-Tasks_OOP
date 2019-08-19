@@ -7,7 +7,7 @@
         public override void Draw()
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("\nIt's Square of a class!");
+            Console.WriteLine("\nIt's Draw() method of a Square!");
             Console.ResetColor();
         }
     }

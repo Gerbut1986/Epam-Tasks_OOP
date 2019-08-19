@@ -89,6 +89,7 @@
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Incorrect inputing... Try again!");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\tPress any Key to continue..");
                         Console.ReadKey(true);
                         Console.ResetColor();
@@ -100,17 +101,17 @@
         static int Menu()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n\t\t\t     The Topic - 'Classes'");
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("\n1 - Task 1 (Rectangle with methods (Perimeter and Area) having 2 coordinates)");
             Console.WriteLine("\n2 - Task 2 (Auto - Implemented Properties instead the Methods)");
             Console.WriteLine("\n3 - Task 3 (Cirkle whith method)");
             Console.WriteLine("\n4 - Task 4 (1 - 3 tasks using static classes)");
             Console.WriteLine("\n5 - Task 5 (Comlex numbers to overload operators: '*' and '/'))");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n\t\t\t   The Topic - 'Inheritance'");
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\n6 - Task 6 (Base of a class Figure with method Draw())");
             Console.WriteLine("\n7 - Task 7 (Base of a class Figure use readonly properties)");
             Console.WriteLine("\n8 - Task 8 (Class Figure use virtual method instead abstract)");

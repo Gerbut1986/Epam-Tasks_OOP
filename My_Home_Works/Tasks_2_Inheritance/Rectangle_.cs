@@ -7,7 +7,7 @@
         public override void Draw()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("\nIt's Rectangle of a class!");
+            Console.WriteLine("\nIt's a Draw() method of a Rectangle!");
             Console.ResetColor();
         }
     }
