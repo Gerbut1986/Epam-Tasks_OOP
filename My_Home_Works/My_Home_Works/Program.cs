@@ -1,10 +1,17 @@
 ﻿namespace My_Home_Works
 {
     using System;
+    using System.Threading;
 
     class Program
     {
         static void Main(string[] args)
+        {
+            Thread thread = new Thread(new Program().Call_AllTasks);
+            thread.Start();
+        }
+
+        void Call_AllTasks()
         {
             int choice = 0;
             do
@@ -84,7 +91,7 @@
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
-                    case 0:break;
+                    case 0: break;
                     default:
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Red;
