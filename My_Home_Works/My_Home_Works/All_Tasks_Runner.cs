@@ -48,7 +48,6 @@
 
             Rectangle rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) }, 
                                            new Point { X = double.Parse(input[2]), Y = double.Parse(input[3]) });
-
             Console.ResetColor();
             Console.WriteLine("\nPerimeter of Rectangle is: {0}", rect.Perimeter());
             Console.WriteLine("\nArea of Rectangle is: {0}", rect.Area());
