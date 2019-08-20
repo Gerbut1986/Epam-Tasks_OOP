@@ -10,6 +10,25 @@ namespace Tasks_1_Classes
         public double X, Y;
     }
 
+    //public class Rectangle
+    //{
+    //    Size WH;
+    //    double P, S;
+
+    //    public Rectangle(Point leftUp, Point rightLow)
+    //    {
+
+    //    }
+
+    //    public double Perimeter => P;
+    //    public double Area => S;
+
+    //    public void SetNewSquare(Point lt, Point rb)
+    //    {
+
+    //    }
+    //}
+
     public class Rectangle
     {
         Point leftUp, rightLow;

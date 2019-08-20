@@ -9,20 +9,45 @@
         double x = 0.0, y = 0.0;
 
         public void Task_1()
-        {
-            Point coordUp, coordLow;
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("Enter the upper and lower right corner coordinates: ");
-            Console.Write("\nInput upper left:\n\nx1:");
-            coordUp.X = double.Parse(Console.ReadLine());
-            Console.Write("\ny1: ");
-            coordUp.Y = double.Parse(Console.ReadLine()); 
-            Console.Write("\nInput lower right:\nx2: ");
-            coordLow.X = double.Parse(Console.ReadLine());
-            Console.Write("\ny2: ");
-            coordLow.Y = double.Parse(Console.ReadLine()); 
+        {   //
+            // Input each coordinates:
+            //
+            //Point coordUp, coordLow;
+            //Console.ForegroundColor = ConsoleColor.Magenta;
+            //Console.WriteLine("Enter the upper and lower right corner coordinates: ");
+            //Console.Write("\nInput upper left:\n\nx1:");
+            //coordUp.X = double.Parse(Console.ReadLine());
+            //Console.Write("\ny1: ");
+            //coordUp.Y = double.Parse(Console.ReadLine()); 
+            //Console.Write("\nInput lower right:\nx2: ");
+            //coordLow.X = double.Parse(Console.ReadLine());
+            //Console.Write("\ny2: ");
+            //coordLow.Y = double.Parse(Console.ReadLine()); 
 
-            Rectangle rect = new Rectangle(coordUp, coordLow);
+            //Rectangle rect = new Rectangle(coordUp, coordLow);
+
+            //
+            // Input in one line separated by spaces:
+            //
+            string[] input = null;
+            Console.WriteLine("Enter the upper and lower right corner coordinates: ");
+            Console.Write("Input x1 y1 x2 y2 separated by spaces: ");
+            try
+            {
+                input = Console.ReadLine().Split(new char[] { ' ' }, 4);
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Title = "Exception..";
+                Console.WriteLine(ex.Message);
+                Console.Write("\n\n\t\tPress any Key to continue...");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
+
+            Rectangle rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) }, 
+                                           new Point { X = double.Parse(input[2]), Y = double.Parse(input[3]) });
 
             Console.ResetColor();
             Console.WriteLine("\nPerimeter of Rectangle is: {0}", rect.Perimeter());
