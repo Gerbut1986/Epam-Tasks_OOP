@@ -46,7 +46,7 @@ namespace Tasks_1_Classes
         public override string ToString()
         {
 
-            return string.Format(" ({0}, {1})", realNumb, imagionary);
+            return $" ({realNumb}, {imagionary})";
         }
         #endregion
     }
