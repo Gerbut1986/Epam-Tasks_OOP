@@ -57,17 +57,33 @@
         public void Task_2()
         {
             Point upLeft, lowRight;
-            Console.WriteLine("Please input coordinates of an upper left corner:\n");
-            Console.Write("X1: ");
-            upLeft.X = double.Parse(Console.ReadLine());
-            Console.Write("Y1: ");
+            upLeft.X = upLeft.Y = lowRight.X = lowRight.Y = 0.0;
 
-            Console.WriteLine("\n\nPlease input coordinates of an lower right corner:\n");
-            upLeft.Y = double.Parse(Console.ReadLine());
-            Console.Write("\nX2: ");
-            lowRight.X = double.Parse(Console.ReadLine());
-            Console.Write("Y2: ");
-            lowRight.Y = double.Parse(Console.ReadLine());
+
+            try
+            {
+                Console.WriteLine("Please input coordinates of an upper left corner:\n");
+                Console.Write("X1: ");
+                upLeft.X = double.Parse(Console.ReadLine());
+                Console.Write("Y1: ");
+
+                Console.WriteLine("\n\nPlease input coordinates of an lower right corner:\n");
+                upLeft.Y = double.Parse(Console.ReadLine());
+                Console.Write("\nX2: ");
+                lowRight.X = double.Parse(Console.ReadLine());
+                Console.Write("Y2: ");
+                lowRight.Y = double.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
 
             Rectangle_Property rect2 = new Rectangle_Property(upLeft, lowRight);
 
@@ -79,7 +95,21 @@
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.Write("Input radius of the Circle: ");
-            double radius = double.Parse(Console.ReadLine());
+            double radius = 0.0;
+            try
+            {
+                radius = double.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
             Circle circle = new Circle(radius);
             Console.ResetColor();
             Console.WriteLine("\n\nLength of a Circle is - {0}",  circle.Length_Circle());
@@ -88,19 +118,33 @@
 
         public void Task_4()
         {
-            // Static of The Rectangle:
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Point coordUp, coordLow;
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("Enter the upper and lower right corner coordinates: ");
-            Console.Write("\nInput upper left:\n\nx1:");
-            coordUp.X = double.Parse(Console.ReadLine());
-            Console.Write("\ny1: ");
-            coordUp.Y = double.Parse(Console.ReadLine());
-            Console.Write("\nInput lower right:\nx2: ");
-            coordLow.X = double.Parse(Console.ReadLine());
-            Console.Write("\ny2: ");
-            coordLow.Y = double.Parse(Console.ReadLine());
+            coordUp.X = coordUp.Y = coordLow.X = coordLow.Y = 0.0;
+
+            try
+            {
+                // Static of The Rectangle:
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("Enter the upper and lower right corner coordinates: ");
+                Console.Write("\nInput upper left:\n\nx1:");
+                coordUp.X = double.Parse(Console.ReadLine());
+                Console.Write("\ny1: ");
+                coordUp.Y = double.Parse(Console.ReadLine());
+                Console.Write("\nInput lower right:\nx2: ");
+                coordLow.X = double.Parse(Console.ReadLine());
+                Console.Write("\ny2: ");
+                coordLow.Y = double.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
 
             Rectangle_Static.SetCoordinates(coordUp, coordLow);
 
@@ -123,17 +167,33 @@
 
         public void Task_5()
         {
-            Console.WriteLine("Set 1st of Comlex Number:\n");
-            Console.Write("Input the real number: ");
-            double realNumb1 = double.Parse(Console.ReadLine());
-            Console.Write("Input the imagionary number: ");
-            double imagionary1 = double.Parse(Console.ReadLine());
+            double realNumb1, realNumb2, imagionary1, imagionary2;
+            realNumb1 = realNumb2 = imagionary1 = imagionary2 = 0.0;
 
-            Console.WriteLine("\nSet 1st of Comlex Number:\n");
-            Console.Write("Input the real number: ");
-            double realNumb2 = double.Parse(Console.ReadLine());
-            Console.Write("Input the imagionary number: ");
-            double imagionary2 = double.Parse(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Set 1st of Comlex Number:\n");
+                Console.Write("Input the real number: ");
+                realNumb1 = double.Parse(Console.ReadLine());
+                Console.Write("Input the imagionary number: ");
+                imagionary1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("\nSet 1st of Comlex Number:\n");
+                Console.Write("Input the real number: ");
+                realNumb2 = double.Parse(Console.ReadLine());
+                Console.Write("Input the imagionary number: ");
+                imagionary2 = double.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
 
             ComplexNumber complex1 = new ComplexNumber(realNumb1, imagionary1);
             ComplexNumber complex2 = new ComplexNumber(realNumb2, imagionary2);
@@ -182,11 +242,24 @@
 
         void Input(string figureName, ref double x, ref double y)
         {
-            Console.Write($"\nInput X for {figureName}: ");
-            x = double.Parse(Console.ReadLine());
+            try
+            {
+                Console.Write($"\nInput X for {figureName}: ");
+                x = double.Parse(Console.ReadLine());
 
-            Console.Write($"Input Y for {figureName}: ");
-            y = double.Parse(Console.ReadLine());
+                Console.Write($"Input Y for {figureName}: ");
+                y = double.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
         }
 
         public void Task_9()

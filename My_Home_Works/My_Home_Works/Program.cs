@@ -9,6 +9,7 @@
         {
             Thread thread = new Thread(new Program().Call_AllTasks);
             thread.Start();
+            new Program().Call_AllTasks();
         }
 
         void Call_AllTasks()
@@ -129,7 +130,21 @@
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("\n\t\t\t\t      ");
 
-            int choice = int.Parse(Console.ReadLine());
+            int choice = 0;
+            try
+            {
+                choice = int.Parse(Console.ReadLine());
+            }
+            catch(Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(ex.Message);
+                Console.Title = "Your input was a string..";
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
             Console.ResetColor();
 
             return choice;
