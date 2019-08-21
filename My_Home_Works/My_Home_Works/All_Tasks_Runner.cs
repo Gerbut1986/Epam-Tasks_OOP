@@ -8,7 +8,14 @@
 
     class All_Tasks_Runner
     {
+        List<Person> persons = new List<Person>();
         double x = 0.0, y = 0.0;
+        Random rand;
+
+        public All_Tasks_Runner()
+        {
+            rand = new Random();
+        }
 
         public void Task_1()
         {   //
@@ -48,7 +55,7 @@
                 Console.ResetColor();
             }
 
-            Rectangle rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) }, 
+            Rectangle rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) },
                                            new Point { X = double.Parse(input[2]), Y = double.Parse(input[3]) });
             Console.ResetColor();
             Console.WriteLine("\nPerimeter of Rectangle is: {0}", rect.Perimeter());
@@ -114,7 +121,7 @@
             }
             Circle circle = new Circle(radius);
             Console.ResetColor();
-            Console.WriteLine("\n\nLength of a Circle is - {0}",  circle.Length_Circle());
+            Console.WriteLine("\n\nLength of a Circle is - {0}", circle.Length_Circle());
             Console.WriteLine("\nand Area - {0}", circle.Area());
         }
 
@@ -279,8 +286,6 @@
 
         public void Task_10()
         {
-            Random rand = new Random();
-            List<Person> persons = new List<Person>();
             persons.Add(new Person { Name = "Alex", Age = 39, PhoneNumbers = new string[] { "380971234567", "380662345566", "3805431322243" } });
             persons.Add(new Person { Name = "Ivan", Age = 32, PhoneNumbers = new string[] { "380754309875", "3803467899300", "3804564565465" } });
             persons.Add(new Person { Name = "Dmitry", Age = 52, PhoneNumbers = new string[] { "380673245569", "38012345677", "3803453647567" } });
@@ -291,15 +296,27 @@
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(" {0,-13} {1,5}\n", "Name:", "Age:");
             Console.ForegroundColor = ConsoleColor.Green;
-            var colors = ColorRand();
+
+            OutputPersons();
+
+            Task_11(); // Call to 2 task
+
+            Console.Clear();
+
+            OutputPersons();
+
+            Console.ResetColor();
+        }
+
+        void OutputPersons()
+        {
+            List<ConsoleColor> colors = ColorRand();
 
             for (int i = 0; i < persons.Count; i++)
             {
                 Console.ForegroundColor = colors[rand.Next(0, 6)];
                 Console.WriteLine(" {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
             }
-
-            Console.ResetColor();
         }
 
         List<ConsoleColor> ColorRand()
@@ -313,6 +330,62 @@
             colors.Add(ConsoleColor.Cyan);
 
             return colors;
+        }
+
+        public void Task_11()
+        {
+            Person[] twoPerson = InputPerson();
+            try
+            {
+                persons.AddRange(twoPerson);
+            }
+            catch
+            {
+                Console.Clear();
+                Console.ForegroundColor = ColorRand()[1];
+                Console.Write("\n The List of Person has not yet been created..\n First you need to complete Task_10\n");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("\n Click 10 on the main menu..");
+                Console.ForegroundColor = ColorRand()[4];
+                Console.Write("\n\n\n\n\t\t\t  Press any Key to continue...");
+                Console.ReadKey(true);
+                Console.ResetColor();
+            }
+        }
+
+        Person[] InputPerson(int quantity = 2)
+        {
+            string name;
+            int age;
+            Person[] tmp = new Person[quantity];
+            string suffix = tmp.Length == 1 ? "st" : "nd";
+            string[] phones = new string[rand.Next(3, 5)];
+            Console.ForegroundColor = ColorRand()[new Random().Next(0, 6)];
+            Console.WriteLine($"\n\t\t\t     Add {tmp.Length} Person to the list\n");
+
+            for (int i = 0; i < tmp.Length; i++)
+            {
+                Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
+                Console.WriteLine($" {i + 1}{suffix} person:\n");
+                Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
+                Console.Write("\n Name: ");
+                name = Console.ReadLine();
+                Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
+                Console.Write("\n Age: ");
+                age = int.Parse(Console.ReadLine());
+                Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
+                Console.Write($"\n and {phones.Length} Phone numbers: ");
+                for (int j = 0; j < phones.Length; j++)
+                {
+                    Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
+                    Console.Write($"\n\n {j + 1} number: ");
+                    phones[j] = Console.ReadLine();
+                }
+
+                tmp[i] = new Person { Name = name, Age = age, PhoneNumbers = phones };
+            }
+
+            return tmp;
         }
     }
 }

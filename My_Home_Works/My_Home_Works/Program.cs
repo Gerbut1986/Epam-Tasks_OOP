@@ -23,7 +23,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_1();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -31,7 +31,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_2();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -39,7 +39,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_3();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -47,7 +47,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_4();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -55,7 +55,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_5();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -63,7 +63,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_6();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -71,7 +71,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_7();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -79,7 +79,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_8();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -87,7 +87,7 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_9();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -95,7 +95,15 @@
                         Console.Clear();
                         new All_Tasks_Runner().Task_10();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.ReadKey(true);
+                        Console.ResetColor();
+                        break;
+                    case 11:
+                        Console.Clear();
+                        new All_Tasks_Runner().Task_11();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -105,7 +113,7 @@
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Incorrect inputing... Try again!");
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\tPress any Key to continue..");
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -142,6 +150,7 @@
             Console.WriteLine("\n\t\t\t   Please make your choice..");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("\n\t\t\t\t      ");
+            Console.ResetColor();
 
             int choice = 0;
             try
@@ -154,11 +163,10 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.Write("\n\n\t\t\t  Press any Key to continue...");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
-            //Console.ResetColor();
 
             return choice;
         }
