@@ -279,6 +279,7 @@
 
         public void Task_10()
         {
+            Random rand = new Random();
             List<Person> persons = new List<Person>();
             persons.Add(new Person { Name = "Alex", Age = 39, PhoneNumbers = new string[] { "380971234567", "380662345566", "3805431322243" } });
             persons.Add(new Person { Name = "Ivan", Age = 32, PhoneNumbers = new string[] { "380754309875", "3803467899300", "3804564565465" } });
@@ -290,11 +291,28 @@
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(" {0,-13} {1,5}\n", "Name:", "Age:");
             Console.ForegroundColor = ConsoleColor.Green;
+            var colors = ColorRand();
 
             for (int i = 0; i < persons.Count; i++)
-                Console.WriteLine(" {0,-13} {1,3}", persons[i].Name, persons[i].Age);
+            {
+                Console.ForegroundColor = colors[rand.Next(0, 6)];
+                Console.WriteLine(" {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
+            }
 
             Console.ResetColor();
+        }
+
+        List<ConsoleColor> ColorRand()
+        {
+            List<ConsoleColor> colors = new List<ConsoleColor>();
+            colors.Add(ConsoleColor.Blue);
+            colors.Add(ConsoleColor.Red);
+            colors.Add(ConsoleColor.Green);
+            colors.Add(ConsoleColor.Magenta);
+            colors.Add(ConsoleColor.Yellow);
+            colors.Add(ConsoleColor.Cyan);
+
+            return colors;
         }
     }
 }
