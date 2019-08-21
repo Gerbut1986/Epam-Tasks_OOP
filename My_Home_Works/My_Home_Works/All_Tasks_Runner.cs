@@ -3,6 +3,8 @@
     using System;
     using Tasks_1_Classes;
     using Tasks_2_Inheritance;
+    using Tasks_3_Collections;
+    using System.Collections.Generic;
 
     class All_Tasks_Runner
     {
@@ -273,6 +275,26 @@
             Square_L square = new Square_L(x, y);
 
             figure.DrawAll(rect, square);
+        }
+
+        public void Task_10()
+        {
+            List<Person> persons = new List<Person>();
+            persons.Add(new Person { Name = "Alex", Age = 39, PhoneNumbers = new string[] { "380971234567", "380662345566", "3805431322243" } });
+            persons.Add(new Person { Name = "Ivan", Age = 32, PhoneNumbers = new string[] { "380754309875", "3803467899300", "3804564565465" } });
+            persons.Add(new Person { Name = "Dmitry", Age = 52, PhoneNumbers = new string[] { "380673245569", "38012345677", "3803453647567" } });
+            persons.Add(new Person { Name = "Vladimir", Age = 43, PhoneNumbers = new string[] { "380971234567", "38033489006", "3865756755675" } });
+            persons.Add(new Person { Name = "Yulia", Age = 33, PhoneNumbers = new string[] { "38043564556", "380756453543", "380234456457" } });
+            persons.Add(new Person { Name = "Diana", Age = 27, PhoneNumbers = new string[] { "38099999999", "38077734343", "380766644487" } });
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(" {0,-13} {1,5}\n", "Name:", "Age:");
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            for (int i = 0; i < persons.Count; i++)
+                Console.WriteLine(" {0,-13} {1,3}", persons[i].Name, persons[i].Age);
+
+            Console.ResetColor();
         }
     }
 }

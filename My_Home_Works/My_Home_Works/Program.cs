@@ -9,7 +9,6 @@
         {
             Thread thread = new Thread(new Program().Call_AllTasks);
             thread.Start();
-            new Program().Call_AllTasks();
         }
 
         void Call_AllTasks()
@@ -92,6 +91,14 @@
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
+                    case 10:
+                        Console.Clear();
+                        new All_Tasks_Runner().Task_10();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("\n\n\t\tPress any Key to continue...");
+                        Console.ReadKey(true);
+                        Console.ResetColor();
+                        break;
                     case 0: break;
                     default:
                         Console.Clear();
@@ -124,6 +131,12 @@
             Console.WriteLine("\n7 - Task 7 (Base of a class Figure use readonly properties)");
             Console.WriteLine("\n8 - Task 8 (Class Figure use virtual method instead abstract)");
             Console.WriteLine("\n9 - Task 9 (Class Figure add IDrawable interface with Draw() method");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\n\t\t\t    The Topic - 'Collection'");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n10 - Task 10 (Create class Person & List<Person>)");
+            Console.WriteLine("\n11 - Task 11 (Using the method AddRange add 2 Person to current the List)");
+            Console.WriteLine("\n12 - Task 12 (Create List to random generate of an elements)");
             Console.WriteLine("\n0 - Exit"); 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\t\t\t   Please make your choice..");
@@ -145,7 +158,7 @@
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
-            Console.ResetColor();
+            //Console.ResetColor();
 
             return choice;
         }

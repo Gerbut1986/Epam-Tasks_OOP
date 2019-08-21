@@ -41,3 +41,5 @@ C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\D
 C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.csproj.CopyComplete
 C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.exe
 C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\obj\Debug\My_Home_Works.pdb
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_3_Collections.dll
+C:\Users\Trussardi\source\repos\Epam-Tasks_OOP\My_Home_Works\My_Home_Works\bin\Debug\Tasks_3_Collections.pdb
