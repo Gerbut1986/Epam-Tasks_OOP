@@ -313,11 +313,23 @@
 
         public void Task_11()
         {
-            Person[] twoPerson = InputPerson();
+            //Person[] twoPerson = InputPerson();
             try
             {
-                persons.AddRange(twoPerson);
-                OutputPersons();
+                // persons.AddRange(twoPerson);
+                Console.ForegroundColor = ColorRand()[2];
+                Console.WriteLine(new string('-', 80));
+                Console.WriteLine("\t\t\tCurrent list of Numbers Phones is:\n");
+                Console.WriteLine(new string('-', 80));
+
+                for (int i = 0; i < persons.Count; i++)
+                {
+                    foreach (var number in persons[i].PhoneNumbers)
+                    {
+                        Console.ForegroundColor = ColorRand()[i];
+                        Console.WriteLine($"\n\t\t\t\t  {number}\n");
+                    }
+                }
             }
             catch
             {
