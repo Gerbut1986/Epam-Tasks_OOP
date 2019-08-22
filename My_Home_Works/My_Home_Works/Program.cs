@@ -13,7 +13,9 @@
 
         void Call_AllTasks()
         {
+            All_Tasks_Runner tasks = new All_Tasks_Runner();
             int choice = 0;
+
             do
             {
                 choice = Menu();
@@ -93,7 +95,7 @@
                         break;
                     case 10:
                         Console.Clear();
-                        new All_Tasks_Runner().Task_10();
+                        tasks.Task_10();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
@@ -101,7 +103,15 @@
                         break;
                     case 11:
                         Console.Clear();
-                        new All_Tasks_Runner().Task_11();
+                        tasks.Task_11();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.ReadKey(true);
+                        Console.ResetColor();
+                        break;
+                    case 12:
+                        Console.Clear();
+                        //tasks.Task_12();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\t\t  Press any Key to continue...");
                         Console.ReadKey(true);
@@ -142,8 +152,8 @@
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n\t\t\t    The Topic - 'Collection'");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("\n10 - Task 10 (Create class Person & List<Person>)");
-            Console.WriteLine("\n11 - Task 11 (Using the method AddRange add 2 Person to current the List)");
+            Console.WriteLine("\n10 - Task 10 (Create class Person & List<Person> >5)");
+            Console.WriteLine("\n11 - Task 11 (Using the method AddRange add 2 person to the current list)");
             Console.WriteLine("\n12 - Task 12 (Create List to random generate of an elements)");
             Console.WriteLine("\n0 - Exit"); 
             Console.ForegroundColor = ConsoleColor.Green;

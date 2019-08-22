@@ -293,30 +293,9 @@
             persons.Add(new Person { Name = "Yulia", Age = 33, PhoneNumbers = new string[] { "38043564556", "380756453543", "380234456457" } });
             persons.Add(new Person { Name = "Diana", Age = 27, PhoneNumbers = new string[] { "38099999999", "38077734343", "380766644487" } });
 
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(" {0,-13} {1,5}\n", "Name:", "Age:");
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            OutputPersons();
-
-            Task_11(); // Call to 2 task
-
-            Console.Clear();
-
             OutputPersons();
 
             Console.ResetColor();
-        }
-
-        void OutputPersons()
-        {
-            List<ConsoleColor> colors = ColorRand();
-
-            for (int i = 0; i < persons.Count; i++)
-            {
-                Console.ForegroundColor = colors[rand.Next(0, 6)];
-                Console.WriteLine(" {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
-            }
         }
 
         List<ConsoleColor> ColorRand()
@@ -338,6 +317,7 @@
             try
             {
                 persons.AddRange(twoPerson);
+                OutputPersons();
             }
             catch
             {
@@ -353,7 +333,7 @@
             }
         }
 
-        Person[] InputPerson(int quantity = 2)
+        Person[] InputPerson(int quantity = 2) // Auto-param with the ability to accept the number of person
         {
             string name;
             int age;
@@ -366,7 +346,7 @@
             for (int i = 0; i < tmp.Length; i++)
             {
                 Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
-                Console.WriteLine($" {i + 1}{suffix} person:\n");
+                Console.WriteLine($"\n\n {i + 1}{suffix} person:\n");
                 Console.ForegroundColor = ColorRand()[rand.Next(0, 6)];
                 Console.Write("\n Name: ");
                 name = Console.ReadLine();
@@ -386,6 +366,26 @@
             }
 
             return tmp;
+        }
+
+        void OutputPersons()
+        {
+            Console.Clear();
+            List<ConsoleColor> colors = ColorRand();
+            Console.WriteLine(new string('-', 80));
+            Console.WriteLine("\t\t\t  Current list of a Person is:\n");
+            Console.WriteLine(new string('-', 80));
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\t\t\t       {0,-13} {1,5}\n", "Name:", "Age:");
+
+            Console.WriteLine(new string('-', 80));
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            for (int i = 0; i < persons.Count; i++)
+            {
+                Console.ForegroundColor = colors[rand.Next(0, 6)];
+                Console.WriteLine("\t\t\t       {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
+            }
         }
     }
 }
