@@ -10,7 +10,6 @@
         {
             foreach (string number in PhoneNumbers)
                 yield return number;
-
         }
     }
 }
