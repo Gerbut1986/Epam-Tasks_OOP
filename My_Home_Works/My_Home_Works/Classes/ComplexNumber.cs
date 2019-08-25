@@ -1,23 +1,30 @@
-﻿#region Description:
-/*
- Реалізувати клас ComplexNumber. 
- Перегрузити операції множення та ділення для комплексних чисел.
- Розділити створений клас на логічні регіони (#region).
- */
-#endregion
-namespace Tasks_1_Classes
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace My_Home_Works.Classes
 {
-    public class ComplexNumber
+    #region Description:
+    /*
+     Реалізувати клас ComplexNumber. 
+     Перегрузити операції множення та ділення для комплексних чисел.
+     Розділити створений клас на логічні регіони (#region).
+     */
+    #endregion
+
+    class ComplexNumber
     {
         #region Fields (Real and Imagionary of a part of the Complex number):
         double realNumb, imagionary;
         #endregion
 
         #region Properties to get access to fields:
-        public double RealNumber
-        {
-            get { return realNumb; }
-            set { realNumb = value; }
+        public double RealNumber 
+        { 
+            get { return realNumb; } 
+            set { realNumb = value; } 
         }
         public double Imagionary { get { return imagionary; } set { imagionary = value; } }
         #endregion
@@ -31,12 +38,12 @@ namespace Tasks_1_Classes
         #endregion
 
         #region Overload of operators:
-        public static ComplexNumber operator *(ComplexNumber c1, ComplexNumber c2)
+        public static ComplexNumber operator * (ComplexNumber c1, ComplexNumber c2)
         {
             return new ComplexNumber(c1.realNumb * c2.realNumb, c1.imagionary * c2.imagionary);
         }
 
-        public static ComplexNumber operator /(ComplexNumber c1, ComplexNumber c2)
+        public static ComplexNumber operator / (ComplexNumber c1, ComplexNumber c2)
         {
             return new ComplexNumber(c1.realNumb / c2.realNumb, c1.imagionary / c2.imagionary);
         }
@@ -46,7 +53,7 @@ namespace Tasks_1_Classes
         public override string ToString()
         {
 
-            return $" ({realNumb}, {imagionary})";
+            return string.Format(" ({0}, {1})", realNumb, imagionary);
         }
         #endregion
     }

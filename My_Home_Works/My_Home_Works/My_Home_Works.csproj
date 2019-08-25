@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>My_Home_Works</RootNamespace>
     <AssemblyName>My_Home_Works</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,32 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All_Tasks_Runner.cs" />
+    <Compile Include="All_Tasks.cs" />
+    <Compile Include="Classes\Circle.cs" />
+    <Compile Include="Classes\ComplexNumber.cs" />
+    <Compile Include="Classes\Rectangle.cs" />
+    <Compile Include="Classes\Rectangle_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tasks_1_Classes\Tasks_1_Classes.csproj">
-      <Project>{dbd820c7-2281-487d-a0e9-70b64707cf66}</Project>
-      <Name>Tasks_1_Classes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tasks_2_Inheritance\Tasks_2_Inheritance.csproj">
-      <Project>{36b0bae6-833d-45fd-b619-cc40d640de50}</Project>
-      <Name>Tasks_2_Inheritance</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tasks_3_Collections\Tasks_3_Collections.csproj">
-      <Project>{dcbe4e30-b56a-4bf3-bf08-9409d6dfd46e}</Project>
-      <Name>Tasks_3_Collections</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Tasks %28Descriptions%29\Tasks 2 %28Inheritance%29.txt" />
-    <Content Include="Tasks %28Descriptions%29\Tasks 1 %28Classes%29.txt" />
-    <Content Include="Tasks %28Descriptions%29\Tasks 3 %28Collections%29.txt" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
