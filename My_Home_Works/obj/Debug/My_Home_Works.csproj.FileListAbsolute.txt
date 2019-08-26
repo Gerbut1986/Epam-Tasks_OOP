@@ -1,0 +1,14 @@
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\obj\Debug\My_Home_Works.csprojAssemblyReference.cache
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\obj\Debug\My_Home_Works.csproj.CoreCompileInputs.cache
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\My_Home_Works.exe.config
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\My_Home_Works.exe
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\My_Home_Works.pdb
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_1_Classes.dll
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_2_Inheritance.dll
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_3_Collections.dll
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_1_Classes.pdb
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\bin\Debug\Tasks_3_Collections.pdb
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\obj\Debug\My_Home_Works.csproj.CopyComplete
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\obj\Debug\My_Home_Works.exe
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\My_Home_Works\obj\Debug\My_Home_Works.pdb

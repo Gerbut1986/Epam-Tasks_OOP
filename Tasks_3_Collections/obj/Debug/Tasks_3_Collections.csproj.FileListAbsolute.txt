@@ -1,0 +1,5 @@
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_3_Collections\obj\Debug\Tasks_3_Collections.csproj.CoreCompileInputs.cache
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_3_Collections\bin\Debug\Tasks_3_Collections.dll
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_3_Collections\bin\Debug\Tasks_3_Collections.pdb
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_3_Collections\obj\Debug\Tasks_3_Collections.dll
+C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_3_Collections\obj\Debug\Tasks_3_Collections.pdb
