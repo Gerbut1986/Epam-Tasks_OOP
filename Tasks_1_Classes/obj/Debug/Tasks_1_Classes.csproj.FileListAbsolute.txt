@@ -4,3 +4,9 @@ C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.d
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.pdb
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.dll
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.csprojAssemblyReference.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.csproj.CoreCompileInputs.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.pdb

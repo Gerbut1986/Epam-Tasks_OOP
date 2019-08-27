@@ -4,3 +4,9 @@ C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inher
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.pdb
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.dll
 C:\Users\Juia\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\bin\Debug\Tasks_2_Inheritance.pdb
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.csprojAssemblyReference.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.dll
+C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_2_Inheritance\obj\Debug\Tasks_2_Inheritance.pdb

@@ -473,7 +473,7 @@
                     case 2:
                         Console.Clear();
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
-                        Console.WriteLine("\nAll elements starting with 'Z':");
+                        Console.WriteLine("\nAll elements w/o 'Z':");
                         HashSet<string> myHash = DeleteDuplicate();
                         foreach (var i in myHash)
                         {
@@ -519,6 +519,7 @@
                         break;
                     case 0:
                         Console.Clear();
+                        Console.Beep();
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\t\t  Press any Key to come back in Main menu...");
                         Console.ReadKey(true);
