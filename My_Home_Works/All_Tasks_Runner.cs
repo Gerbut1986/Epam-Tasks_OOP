@@ -1,6 +1,7 @@
 ﻿namespace My_Home_Works
 {
     using System;
+    using System.Linq;
     using Tasks_1_Classes;
     using Tasks_2_Inheritance;
     using Tasks_3_Collections;
@@ -42,27 +43,28 @@
             // Input in one line separated by spaces:
             //
             string[] input = null;
+            Rectangle rect = null;
             Console.WriteLine("Enter the upper and lower right corner coordinates: ");
             Console.Write("Input x1 y1 x2 y2 separated by spaces: ");
             try
             {
                 input = Console.ReadLine().Split(new char[] { ' ' }, 4);
+                rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) },
+                                          new Point { X = double.Parse(input[2]), Y = double.Parse(input[3]) });
+                Console.ResetColor();
+                Console.WriteLine("\nPerimeter of Rectangle is: {0}", rect.Perimeter());
+                Console.WriteLine("\nArea of Rectangle is: {0}", rect.Area());
             }
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Title = "Exception..";
                 Console.WriteLine(ex.Message);
-                Console.Write("\n\n\t\tPress any Key to continue...");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
-
-            Rectangle rect = new Rectangle(new Point { X = double.Parse(input[0]), Y = double.Parse(input[1]) },
-                                           new Point { X = double.Parse(input[2]), Y = double.Parse(input[3]) });
-            Console.ResetColor();
-            Console.WriteLine("\nPerimeter of Rectangle is: {0}", rect.Perimeter());
-            Console.WriteLine("\nArea of Rectangle is: {0}", rect.Area());
         }
 
 
@@ -92,7 +94,7 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue..");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -153,7 +155,7 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue..");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -202,7 +204,7 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue..");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -268,7 +270,7 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\tPress any Key to continue..");
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue..");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -322,16 +324,16 @@
             {
                 persons.AddRange(twoPerson);
                 Console.ForegroundColor = ColorRand()[rand.Next(0, 13)];
-                Console.WriteLine(new string('-', 80)); 
+                Console.WriteLine(new string('-', 120)); 
                 Console.WriteLine("\t\t\tCurrent list of Numbers Phones is:\n");
-                Console.WriteLine(new string('-', 80));
+                Console.WriteLine(new string('-', 120));
 
                 for (int i = 0; i < persons.Count; i++)
                 {
                     foreach (var number in persons[i].PhoneNumbers)
                     {
                         Console.ForegroundColor = ColorRand()[rand.Next(0, 13)];
-                        Console.WriteLine($"\n\t\t\t\t  {number}\n");
+                        Console.WriteLine($"\\n\n\t\t\t\t\t      {number}\n");
                     }
                 }
             }
@@ -343,7 +345,7 @@
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("\n Click 10 on the main menu..");
                 Console.ForegroundColor = ColorRand()[rand.Next(0, 13)];
-                Console.Write("\n\n\n\n\t\t\t  Press any Key to continue...");
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -362,9 +364,9 @@
             {
                 string suffix = i == 0 ? "st" : "nd";
                 Console.ForegroundColor = colors[rand.Next(0, 13)];
-                Console.Write(new string('-', 80));
+                Console.Write(new string('-', 120));
                 Console.WriteLine($"\n {i + 1}{suffix} person:\n");
-                Console.WriteLine(new string('-', 80));
+                Console.WriteLine(new string('-', 120));
                 Console.ForegroundColor = colors[rand.Next(0, 13)];
                 Console.Write("\n Name: ");
                 name = Console.ReadLine();
@@ -389,13 +391,13 @@
         void OutputPersons()
         {
             Console.Clear();
-            Console.WriteLine(new string('-', 80));
-            Console.WriteLine("\t\t\t  Current list of a Person is:\n");
-            Console.WriteLine(new string('-', 80));
+            Console.WriteLine(new string('-', 120));
+            Console.WriteLine("\t\t\t\t\t      Current list of a Person is:\n");
+            Console.WriteLine(new string('-', 120));
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\t\t\t       {0,-13} {1,5}\n", "Name:", "Age:");
 
-            Console.WriteLine(new string('-', 80));
+            Console.WriteLine(new string('-', 120));
             Console.ForegroundColor = ConsoleColor.Green;
 
             for (int i = 0; i < persons.Count; i++)
@@ -422,7 +424,7 @@
                 Console.WriteLine(ex.Message);
                 Console.Title = "Your input was a string..";
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                Console.Write("\n\n\t\t\t\t\t       Press any Key to continue...");
                 Console.ReadKey(true);
                 Console.ResetColor();
             }
@@ -453,7 +455,7 @@
                     Console.WriteLine($"\n\n{ex.Message}");
                     Console.Title = "Your input was a string..";
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                    Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                     Console.ReadKey(true);
                     Console.ResetColor();
                 }
@@ -466,7 +468,7 @@
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
                         ShowAllList();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -481,7 +483,7 @@
                             Console.WriteLine(i);
                         }
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -493,18 +495,19 @@
                         Console.WriteLine("\nAll elements starting with 'Z':");
                         ShowAllList();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
                     case 4:
                         Console.Clear();
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
-                        DeleteDuplicate();
-                        Console.WriteLine("\nAll duplicate strings removed:");
-                        ShowAllList();
+                        Console.WriteLine("\nSorted by descending:");
+                        var sorted = Desc_Sort(str_elem);
+                        foreach (string str in sorted)
+                            Console.WriteLine(str);
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -513,7 +516,7 @@
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
                         Console.Write($"\nCount of the List is: {ListCount}");
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -521,7 +524,7 @@
                         Console.Clear();
                         Console.Beep();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to come back in Main menu...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to come back in Main menu...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
@@ -530,12 +533,38 @@
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Incorrect inputing... Try again!");
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("\n\n\t\t\t  Press any Key to continue...");
+                        Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);
                         Console.ResetColor();
                         break;
                 }
             } while (choice != 0);
+        }
+
+        void DisplayPage(int pageNumber)
+        {
+            const int numb_elem = 5;
+            int num = 0;
+
+            do
+            {
+                foreach (string str in str_elem)
+                    Console.WriteLine(str);
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"\t\t\t\t\t      Page - {pageNumber}");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
+                Console.ReadKey(true);
+
+            } while (numb_elem!=0);
+        }
+
+        IEnumerable<string> Desc_Sort(List<string> words)
+        {
+            var desc = from word in words orderby word.Substring(0, 1) descending select word;
+
+            return desc;
         }
 
         HashSet<string> DeleteDuplicate()
