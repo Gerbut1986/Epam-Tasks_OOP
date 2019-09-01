@@ -560,12 +560,7 @@
             } while (numb_elem!=0);
         }
 
-        IEnumerable<string> Desc_Sort(List<string> words)
-        {
-            var desc = from word in words orderby word.Substring(0, 1) descending select word;
-
-            return desc;
-        }
+        IEnumerable<string> Desc_Sort(List<string> words) => from word in words orderby word.Substring(0, 1) descending select word;
 
         HashSet<string> DeleteDuplicate()
         {
