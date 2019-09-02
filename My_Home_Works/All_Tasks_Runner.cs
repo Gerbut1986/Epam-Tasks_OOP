@@ -325,7 +325,7 @@
                 persons.AddRange(twoPerson);
                 Console.ForegroundColor = ColorRand()[rand.Next(0, 13)];
                 Console.WriteLine(new string('-', 120)); 
-                Console.WriteLine("\t\t\tCurrent list of Numbers Phones is:\n");
+                Console.WriteLine("\t\t\t\t\t     Current list of Numbers Phones is:\n");
                 Console.WriteLine(new string('-', 120));
 
                 for (int i = 0; i < persons.Count; i++)
@@ -333,7 +333,7 @@
                     foreach (var number in persons[i].PhoneNumbers)
                     {
                         Console.ForegroundColor = ColorRand()[rand.Next(0, 13)];
-                        Console.WriteLine($"\\n\n\t\t\t\t\t      {number}\n");
+                        Console.WriteLine($"\n\n\t\t\t\t\t\t      {number}\n");
                     }
                 }
             }
@@ -395,7 +395,7 @@
             Console.WriteLine("\t\t\t\t\t      Current list of a Person is:\n");
             Console.WriteLine(new string('-', 120));
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\t\t\t       {0,-13} {1,5}\n", "Name:", "Age:");
+            Console.WriteLine("\t\t\t\t\t\t   {0,-13} {1,5}\n", "Name:", "Age:");
 
             Console.WriteLine(new string('-', 120));
             Console.ForegroundColor = ConsoleColor.Green;
@@ -403,7 +403,7 @@
             for (int i = 0; i < persons.Count; i++)
             {
                 Console.ForegroundColor = colors[rand.Next(0, 13)];
-                Console.WriteLine("\t\t\t       {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
+                Console.WriteLine("\t\t\t\t\t\t   {0,-13} {1,3}\n", persons[i].Name, persons[i].Age);
             }
         }
 
@@ -561,6 +561,7 @@
         }
 
         IEnumerable<string> Desc_Sort(List<string> words) => from word in words orderby word.Substring(0, 1) descending select word;
+
 
         HashSet<string> DeleteDuplicate()
         {
