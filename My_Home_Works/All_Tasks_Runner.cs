@@ -503,6 +503,13 @@
                         Console.Clear();
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
                         Console.WriteLine("\nSorted by descending:");
+                        
+                        // Classic sort use method of the List:
+                        // str_elem.Sort();
+                        // foreach (string str in str_elem)
+                        //    Console.WriteLine(str);
+                        
+                        // Using LINQ:
                         var sorted = Desc_Sort(str_elem);
                         foreach (string str in sorted)
                             Console.WriteLine(str);
@@ -557,7 +564,7 @@
                 Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                 Console.ReadKey(true);
 
-            } while (numb_elem!=0);
+            } while (numb_elem != 0);
         }
 
         IEnumerable<string> Desc_Sort(List<string> words) => from word in words orderby word.Substring(0, 1) descending select word;
