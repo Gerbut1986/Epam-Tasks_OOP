@@ -358,7 +358,7 @@
             Person[] tmp = new Person[quantity];
             string[] phones = new string[rand.Next(3, 5)];
             Console.ForegroundColor = colors[rand.Next(0, 13)];
-            Console.WriteLine($"\n\t\t\t     Add {tmp.Length} Person to the list\n");
+            Console.WriteLine($"\n\t\t\t\t\t\t   Add {tmp.Length} Person to the list\n");
 
             for (int i = 0; i < tmp.Length; i++)
             {
@@ -521,7 +521,9 @@
                     case 5:
                         Console.Clear();
                         Console.ForegroundColor = colors[rand.Next(0, 13)];
-                        Console.Write($"\nCount of the List is: {ListCount}");
+                        Console.Write("\nCount of the List is: ");
+                        Console.ForegroundColor = colors[rand.Next(0, 13)];
+                        Console.WriteLine(ListCount);
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("\n\n\t\t\t\t\t      Press any Key to continue...");
                         Console.ReadKey(true);

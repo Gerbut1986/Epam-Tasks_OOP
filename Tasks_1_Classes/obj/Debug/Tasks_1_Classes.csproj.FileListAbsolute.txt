@@ -10,3 +10,9 @@ C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Clas
 C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.csproj.CoreCompileInputs.cache
 C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.dll
 C:\Users\Trussardi\Desktop\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.pdb
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.dll
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\bin\Debug\Tasks_1_Classes.pdb
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.csprojAssemblyReference.cache
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.csproj.CoreCompileInputs.cache
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.dll
+D:\Downloads\GitHub_Gerbut1986\Epam-Tasks_OOP\Tasks_1_Classes\obj\Debug\Tasks_1_Classes.pdb
